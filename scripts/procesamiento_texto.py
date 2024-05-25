@@ -1,16 +1,16 @@
 import spacy
 import string
-import spacy.util
 
 # Verificar si el modelo está instalado
-if not spacy.util.is_package("en_core_web_md"):
-    spacy.cli.download("en_core_web_md")
+import spacy.util
+if not spacy.util.is_package("en_core_web_sm"):
+    spacy.cli.download("en_core_web_sm")
 
 # Cargar el modelo inglés de spaCy
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_sm")
 
 def limpiar_parrafo(parrafo):
-    parrafo = parrafo.lower()
+    parrafo = parrafo.lower().strip()
     signos_puntuacion = string.punctuation.replace('.', '')
     parrafo = parrafo.translate(str.maketrans('', '', signos_puntuacion))
     return parrafo
