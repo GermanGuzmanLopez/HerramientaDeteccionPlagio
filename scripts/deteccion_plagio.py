@@ -19,7 +19,7 @@ def analizar_documentos_carpeta(carpeta):
     
     # Preprocesar Textos
     textos_preprocesados = [" ".join(lematizar(limpiar_parrafo(texto))) for texto in textos]
-    
+
     # Vectorizar los documentos
     vectores, vectorizador = vectorizar_documentos(textos_preprocesados)
 
@@ -33,6 +33,7 @@ def analizar_documentos_carpeta(carpeta):
 
 def comparar_nuevo_texto(nuevo_texto, archivos, vectores, vectorizador):
     nuevo_texto = " ".join(lematizar(limpiar_parrafo(nuevo_texto)))
+
     nuevo_texto_vector = vectorizar_nuevo_texto(nuevo_texto, vectorizador).toarray()
 
     similitudes = {}
