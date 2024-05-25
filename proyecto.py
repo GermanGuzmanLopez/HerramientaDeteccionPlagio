@@ -58,7 +58,7 @@ def vectorizar(parrafo, model):
     vectors = [model.wv[token] for token in tokens]
     return np.mean(vectors, axis=0)
 
-print("Hola")
+
 # Ejemplo de párrafos a comparar
 parrafo1 = "Los videojuegos han avanzado enormemente, ofreciendo experiencias muy inmersivas. Hoy en día, los jugadores disfrutan de gráficos realistas y tramas complejas. Los deportes electrónicos han crecido con torneos mundiales. Las plataformas de streaming permiten compartir partidas en vivo con millones de espectadores. Sin duda, los videojuegos son una forma de entretenimiento masiva y accesible."
 parrafo2 = "La industria de videojuegos ha crecido rápidamente, ofreciendo experiencias realistas e inmersivas. Los jugadores disfrutan de gráficos impresionantes y narrativas cinematográficas. Los deportes electrónicos se han vuelto globales con eventos millonarios. Las plataformas de streaming permiten transmisiones en vivo. Los videojuegos son ahora una forma de entretenimiento popular para todas las edades."
