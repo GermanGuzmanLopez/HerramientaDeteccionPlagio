@@ -58,7 +58,7 @@ for resultado in resultados_similitudes:
     fuentes = []
     for k, v in resultado['Similitudes'].items():
         if v >= umbral_fijo:
-            fuentes.append(k)
+            fuentes.append(f"{k}: %{100*round(v,2)}")
     
     # Calcular el porcentaje de plagio
     porcentaje_plagio = max_similitud * 100
