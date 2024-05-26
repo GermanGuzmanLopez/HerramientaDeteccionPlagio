@@ -41,41 +41,57 @@ for archivo in os.listdir(carpeta_test_data):
 metricas_df, umbral_optimo = evaluar_umbral(resultados_similitudes, plagios_reales)
 
 # Mostrar resultados de métricas
-print(metricas_df)
-print(f"El umbral óptimo basado en la métrica F1 es {umbral_optimo['Umbral']}")
-print(f"Precision: {umbral_optimo['Precision']}, Recall: {umbral_optimo['Recall']}, F1: {umbral_optimo['F1']}")
+# print(metricas_df)
+# print(f"El umbral óptimo basado en la métrica F1 es {umbral_optimo['Umbral']}")
+# print(f"Precision: {umbral_optimo['Precision']}, Recall: {umbral_optimo['Recall']}, F1: {umbral_optimo['F1']}")
 
 # Generar tabla con porcentaje de plagio y fuentes solo para archivos en test_data
 tabla_resultados = []
 
+umbral_fijo = 0.40  # Puedes ajustar este umbral según sea necesario
+
 for resultado in resultados_similitudes:
     archivo = resultado['Archivo']
     max_similitud = max(resultado['Similitudes'].values())
-    umbral_fijo = 0.5
-    fuentes = [k for k, v in resultado['Similitudes'].items() if v >= umbral_fijo]
-    # fuentes = [k for k, v in resultado['Similitudes'].items() if v >= umbral_optimo['Umbral']]
+    
+    # Encontrar las fuentes que tienen similitud mayor o igual al umbral fijo
+    fuentes = []
+    for k, v in resultado['Similitudes'].items():
+        if v >= umbral_fijo:
+            fuentes.append(k)
+    
+    # Calcular el porcentaje de plagio
     porcentaje_plagio = max_similitud * 100
-    tabla_resultados.append({'Archivo': archivo, 'Porcentaje de Plagio': porcentaje_plagio, 'Fuentes': ', '.join(fuentes)})
+    
+    # Crear el diccionario de resultados para este archivo
+    resultado_diccionario = {
+        'Archivo': archivo,
+        'Porcentaje de Plagio': porcentaje_plagio,
+        'Fuentes': ', '.join(fuentes)
+    }
+    
+    # Añadir el resultado a la lista de resultados
+    tabla_resultados.append(resultado_diccionario)
 
 # Crear DataFrame con todos los resultados
 tabla_resultados_df = pd.DataFrame(tabla_resultados)
 
 # Guardar la tabla completa en un archivo CSV
-tabla_resultados_df.to_csv('./data/tabla_resultados_completa.csv', index=False)
+# tabla_resultados_df.to_csv('./data/tabla_resultados_completa.csv', index=False)
 
 # Mostrar y guardar la tabla con los 20 registros con más porcentaje de plagio
-tabla_resultados_top20 = tabla_resultados_df.sort_values(by='Porcentaje de Plagio', ascending=False).head(20)
+tabla_resultados_top20 = tabla_resultados_df.sort_values(by='Porcentaje de Plagio', ascending=False)
 print(tabla_resultados_top20)
-tabla_resultados_top20.to_csv('./data/tabla_resultados_top20.csv', index=False)
+# tabla_resultados_top20.to_csv('./data/tabla_resultados_top20.csv', index=False)
 
 # Graficar métricas
-plt.figure(figsize=(10, 6))
-plt.plot(metricas_df['Umbral'], metricas_df['Precision'], label='Precision')
-plt.plot(metricas_df['Umbral'], metricas_df['Recall'], label='Recall')
-plt.plot(metricas_df['Umbral'], metricas_df['F1'], label='F1')
-plt.xlabel('Umbral')
-plt.ylabel('Métrica')
-plt.title('Evaluación de Umbrales para Detección de Plagio')
-plt.legend()
-plt.grid(True)
-plt.show()
+# plt.figure(figsize=(10, 6))
+# plt.plot(metricas_df['Umbral'], metricas_df['Precision'], label='Precision')
+# plt.plot(metricas_df['Umbral'], metricas_df['Recall'], label='Recall')
+# plt.plot(metricas_df['Umbral'], metricas_df['F1'], label='F1')
+# plt.xlabel('Umbral')
+# plt.ylabel('Métrica')
+# plt.title('Evaluación de Umbrales para Detección de Plagio')
+# plt.legend()
+# plt.grid(True)
+# plt.show()
