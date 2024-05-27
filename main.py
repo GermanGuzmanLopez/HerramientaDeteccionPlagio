@@ -6,7 +6,15 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 def archivo_tiene_contenido(ruta):
-    """Verifica si el archivo en la ruta especificada tiene contenido."""
+    """
+    Verifica si el archivo en la ruta especificada tiene contenido.
+
+    Args:
+        ruta (str): Ruta al archivo.
+
+    Returns:
+        bool: True si el archivo existe y tiene contenido, False en caso contrario.
+    """
     return os.path.exists(ruta) and os.path.getsize(ruta) > 0
 
 # Ruta al archivo de vectores
@@ -76,22 +84,8 @@ for resultado in resultados_similitudes:
 # Crear DataFrame con todos los resultados
 tabla_resultados_df = pd.DataFrame(tabla_resultados)
 
-# Guardar la tabla completa en un archivo CSV
-# tabla_resultados_df.to_csv('./data/tabla_resultados_completa.csv', index=False)
-
 # Mostrar y guardar la tabla con los 20 registros con más porcentaje de plagio
 tabla_resultados_top20 = tabla_resultados_df.sort_values(by='Porcentaje de Plagio', ascending=False)
 print(tabla_resultados_top20)
-# tabla_resultados_top20.to_csv('./data/tabla_resultados_top20.csv', index=False)
 
-# Graficar métricas
-# plt.figure(figsize=(10, 6))
-# plt.plot(metricas_df['Umbral'], metricas_df['Precision'], label='Precision')
-# plt.plot(metricas_df['Umbral'], metricas_df['Recall'], label='Recall')
-# plt.plot(metricas_df['Umbral'], metricas_df['F1'], label='F1')
-# plt.xlabel('Umbral')
-# plt.ylabel('Métrica')
-# plt.title('Evaluación de Umbrales para Detección de Plagio')
-# plt.legend()
-# plt.grid(True)
-# plt.show()
+
