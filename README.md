@@ -7,3 +7,7 @@
    - Mac: ```source venv/bin/activate```
 3. Ya con el ambiente creado instalar dependencias ```pip install -r requirements.txt```
    
+
+## Ejecutar pruebas
+
+Con el comando: ```python -m unittest discover -s scripts/test```
