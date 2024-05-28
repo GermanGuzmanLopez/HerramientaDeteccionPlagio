@@ -1,5 +1,6 @@
 from scripts.deteccion_plagio import analizar_documentos_carpeta, comparar_nuevo_texto
 from scripts.calcular_umbral import evaluar_umbral
+from scripts.calcular_auc import calcular_auc
 import os
 import pickle
 import matplotlib.pyplot as plt
@@ -47,6 +48,11 @@ for archivo in os.listdir(carpeta_test_data):
 
 # Evaluar umbrales
 metricas_df, umbral_optimo = evaluar_umbral(resultados_similitudes, plagios_reales)
+
+# Calcular AUC y gráfica/tabla de la curva ROC
+auc = calcular_auc(resultados_similitudes, plagios_reales)
+print("AUC:",auc)
+
 
 # Mostrar resultados de métricas
 # print(metricas_df)
