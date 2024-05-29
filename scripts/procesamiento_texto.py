@@ -1,3 +1,4 @@
+# scripts/procesamiento_texto.py
 import spacy
 import string
 import contractions

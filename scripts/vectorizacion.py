@@ -1,3 +1,4 @@
+# scripts/vectorizacion.py
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 def vectorizar_documentos(textos):

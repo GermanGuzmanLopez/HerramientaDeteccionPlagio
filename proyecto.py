@@ -1,3 +1,17 @@
+"""
+Proyecto: Herramienta de detección de plagio
+Equipo: Equipo 2
+
+Integrantes:
+Marco Barbosa Maruri   		A01746163
+Germán Guzmán López   		A01752165
+Isabel Vieyra Enríquez    	A01745860
+
+proyecto.py
+
+Contiene Word2Vec. Es una version preeliminar. No utilizada pero se mantienen por motivos de documentación.
+"""
+
 import spacy
 from gensim.models import Word2Vec
 from spacy.lang.es.stop_words import STOP_WORDS
@@ -10,6 +24,7 @@ spacy.cli.download("es_core_news_md")
 
 # Cargar el modelo español de spaCy
 nlp = spacy.load("es_core_news_md")
+
 
 def limpiar_parrafo(parrafo):
     """
@@ -24,6 +39,7 @@ def limpiar_parrafo(parrafo):
     parrafo = parrafo.translate(str.maketrans('', '', signos_puntuacion))
     return parrafo
 
+
 def lematizar(parrafo):
     """
     Lematiza el párrafo usando spaCy.
@@ -32,8 +48,10 @@ def lematizar(parrafo):
     Párrafo lematizado
     """
     doc = nlp(parrafo)
-    lemas = [token.lemma_ for token in doc if token.text not in STOP_WORDS and not token.is_punct]
+    lemas = [
+        token.lemma_ for token in doc if token.text not in STOP_WORDS and not token.is_punct]
     return " ".join(lemas)
+
 
 def entrenar_word2vec(corpus):
     """
@@ -42,8 +60,10 @@ def entrenar_word2vec(corpus):
     Regresa:
     Modelo Word2Vec entrenado
     """
-    model = Word2Vec(sentences=corpus, vector_size=100, window=5, min_count=1, workers=4)
+    model = Word2Vec(sentences=corpus, vector_size=100,
+                     window=5, min_count=1, workers=4)
     return model
+
 
 def vectorizar(parrafo, model):
     """

@@ -1,3 +1,4 @@
+# scripts/deteccion_plagio.py
 import os
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
