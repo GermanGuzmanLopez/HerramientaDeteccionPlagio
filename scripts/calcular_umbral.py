@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 def evaluar_umbral(resultados_similitudes, plagios_reales):
-    umbrales = np.arange(0.0, 1.0, 0.05)
+    umbrales = np.arange(0.0, 1.0, 0.01)
     metricas = []
 
     for umbral in umbrales:
@@ -30,7 +30,11 @@ def evaluar_umbral(resultados_similitudes, plagios_reales):
                         verdaderos_negativos += 1
             else:
                 print(f"Advertencia: El archivo {archivo} no se encuentra en el archivo de plagios reales.")
-
+        print(f"Umbral: {umbral}")
+        print(f"Verdaderos positivos: {verdaderos_positivos}")
+        print(f"Verdaderos negativos: {verdaderos_negativos}")
+        print(f"Falsos positivos: {falsos_positivos}")
+        print(f"Falsos positivos: {falsos_positivos}")
         precision = verdaderos_positivos / (verdaderos_positivos + falsos_positivos) if (verdaderos_positivos + falsos_positivos) > 0 else 0
         recall = verdaderos_positivos / (verdaderos_positivos + falsos_negativos) if (verdaderos_positivos + falsos_negativos) > 0 else 0
         f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
