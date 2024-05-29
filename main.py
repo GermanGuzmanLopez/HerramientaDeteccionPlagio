@@ -93,6 +93,7 @@ for resultado in resultados_similitudes:
     # Crear el diccionario de resultados para este archivo
     resultado_diccionario = {
         'Archivo': archivo,
+        'Plagio': 'Si' if porcentaje_plagio >= 19 else 'No',
         'Porcentaje de Plagio': porcentaje_plagio,
         'Fuentes': ', '.join(fuentes)
     }
