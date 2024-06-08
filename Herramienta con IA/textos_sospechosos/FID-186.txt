@@ -1,0 +1,10 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The use of Artificial Intelligence (AI) is rapidly expanding across many Human Resources (HR) functions. This research seeks to comprehend how various experts from different organizations, such as Project Managers, Managers, Supervisors, and Human Resource Managers, view the potential of AI-based recommender systems to align job profiles with employee profiles. This study utilizes a Delphi methodology, organizing an expert panel to provide their insights through ratings and comments on a set of propositions. Based on the results of the online Delphi study and participant feedback, this research aims to identify the challenges associated with matching employee and job profiles using AI and machine learning tools in the form of recommender systems. We explore the different challenges of aligning employee profiles with job profiles and the current issues faced by executives, HR personnel, and supervisors such as project managers within an organization. The study also highlights the potential or feasible solutions offered by AI in the form of recommender systems, testing a few propositions that focus on potential solutions and various challenges in matching employee profiles to job profiles within an organization.}

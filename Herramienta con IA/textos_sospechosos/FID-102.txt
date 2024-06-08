@@ -1,0 +1,9 @@
+In Nigeria, the prevalence of various security concerns has led to an increase in crime rates, despite the existence of stringent laws and penalties aimed at deterrence. This has created a perception that authorities are struggling to effectively combat crime. To address this challenge and enhance criminal identification and investigation efforts, the implementation of a facial recognition system linked to a continuously updated digital database is essential.
+
+The primary focus of this paper is the development of an automatic criminal investigation system capable of identifying criminals based on facial features and generating real-time digital profiles. The system relies on the Haar Cascades Classifier technique within the OpenCV package for object detection and facial recognition.
+
+In terms of programming languages, Python 3.6 was selected along with the Django 4.2 framework, OpenCV-Python, and Dlib for efficient execution. Django's Object-Relational Mapping (ORM) capabilities and support for various databases, including SQLite3, facilitated the creation of a lightweight database suitable for the application's needs.
+
+The design and implementation of the DICA-FR (Digital Criminal Investigation and Facial Recognition) system adhered to the principles outlined in the 12-factor app idea, ensuring scalability, flexibility, and robustness. During image processing, the Haar method was employed for face detection, followed by post-processing to compare detected faces with known criminal face encodings for matching purposes.
+
+The results of the study indicate that the DICA-FR system effectively supplements human efforts in criminal investigations by enabling facial recognition from long distances, displaying offender names, and providing alerts through the DICA web application interface. This system represents a functional prototype with the potential for deployment in the criminal investigative process within Nigeria.

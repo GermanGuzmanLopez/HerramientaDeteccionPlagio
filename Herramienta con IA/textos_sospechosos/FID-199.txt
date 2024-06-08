@@ -1,0 +1,10 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Artificial Intelligence (AI) is revolutionizing our societies, helping humans tackle the global challenges of this century. Traditionally, AI is developed in software or through neuromorphic engineering in hardware. More recently, a brand-new strategy has been proposed: the so-called Chemical AI (CAI), which leverages molecular, supramolecular, and systems chemistry in wetware to mimic human intelligence. This work describes two promising approaches for boosting CAI. One involves designing and implementing neural surrogates capable of communicating through optical or chemical signals, creating networks for computational purposes and developing micro/nanorobotics. The other approach concerns \'93bottom-up synthetic cells\'94 exploitable for applications in various scenarios, including future nanomedicine. Both topics are presented at a basic level, mainly to inform a broader audience of non-specialists and promote interest in these frontier subjects.}

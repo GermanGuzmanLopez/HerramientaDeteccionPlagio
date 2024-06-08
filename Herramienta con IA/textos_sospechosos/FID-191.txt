@@ -1,0 +1,10 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Artificial Intelligence (AI) is transforming the world in significant ways; while some of its effects are advantageous, the technology can also lead to widespread and enduring negative consequences. The incorporation of AI into various facets of human life is ongoing, and the complex ethical issues arising from the creation, implementation, and usage of the technology highlight the need to reconsider what future developers, designers, and professionals are being taught about AI. It is crucial to educate future members of the AI community, as well as other stakeholders, to contemplate the ways in which AI could affect people's lives and to take responsibility for maximizing its benefits while minimizing its potential risks. This can be achieved, in part, by more thoroughly and systematically integrating AI ethics into the curriculum. In this paper, we briefly outline various approaches to AI ethics and provide a set of recommendations concerning AI ethics education.}

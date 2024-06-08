@@ -1,0 +1,10 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The future viability of the global automotive industry will be significantly influenced by the fourth industrial revolution and the advancement of artificial intelligence (AI). The "new normal" is anticipated to be shaped by new industry standards, including increasingly autonomous self-driving technology, updated safety regulations, more complex insurance rules, adaptive social resistance to technological change, city infrastructure needs with a digital divide, and disruptive business innovation based on strategic input supply partnerships with open-source AI. In this chapter, the primary factors of autonomous vehicles (AVs) are examined using AI advancements in radar and laser technology, commercial risk elements, self-driving consumer behavior, city infrastructure limitations, and social adaptations to new technology. The future path of the AV industry is expected to involve a combination of commercial, social, risk, infrastructure, and regulatory mechanisms, affecting various industry stakeholders. This study forecasts that the most likely sustainable scenario for the AV industry will be driven by: (1) AI\'92s pulsed laser LiDAR (Light Detection and Ranging) with an adequate loop frequency and GPS bi-directional cloud technology requirement, (2) pooled insurance instead of individual liability, (3) smart city infrastructure with a pronounced digital divide across transport regions, leading to more regional inequality, and (4) customers who prefer a human-controlled semi-autonomous vehicle over full machine autonomy.}

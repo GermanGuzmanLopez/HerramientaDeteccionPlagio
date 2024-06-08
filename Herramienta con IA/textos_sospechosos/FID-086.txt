@@ -1,0 +1,7 @@
+Semantic features are crucial in natural language processing as they provide a deeper understanding of the meaning and context within textual data. In machine learning and artificial intelligence, semantic feature extraction involves converting linguistic elements into numerical representations using advanced techniques like word embeddings and deep learning models. The integration of semantic features improves the precision and context-awareness of language models, enabling applications such as sentiment analysis, document categorization, and information retrieval to operate more accurately and relevantly. This paper introduces a novel approach, Hierarchical Mandhami Optimized Semantic Feature Extraction (HMOSFE), designed to enhance semantic feature extraction from English sentences. The proposed HMOSFE model combines hierarchical clustering and fuzzy-based feature extraction to capture intricate semantic relationships within sentences, offering nuanced insights into the underlying meaning of textual content. The model uses pre-trained word embeddings for term representation, calculates a similarity matrix with cosine similarity, and employs hierarchical clustering for document grouping. Fuzzy logic assigns weights to features, allowing for a more refined understanding of semantic significance. The paper presents comprehensive results, including semantic similarity estimations, clustering distances, and fuzzy memberships, showcasing the effectiveness of HMOSFE across diverse documents.
+
+
+
+
+
+

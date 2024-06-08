@@ -1,0 +1,5 @@
+Video games are becoming an integral part of many people's lives. They have the ability to evoke a wide range of emotions, from joy and excitement to fear and empathy, creating deep immersion and lasting impressions for players. How do they achieve this, and is it feasible to incorporate emotions directly into the game?
+
+This article introduces the idea of developing a dynamic procedural content generation (PCG) system with gameplay mechanics that interact using emotions based on affective computing methods. To accomplish this objective, the article has devised an emotion recognition system employing fuzzy logic, with PCG executed by Artificial Neural Networks.
+
+In the video game industry, employing affective computing methods, such as interaction involving emotional expression, can yield significant benefits, as the emotional engagement of the player is crucial. This will serve as a novel contribution to the breadth of human-computer interaction.

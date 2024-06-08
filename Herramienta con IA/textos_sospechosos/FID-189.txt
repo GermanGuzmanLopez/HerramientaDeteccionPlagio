@@ -1,0 +1,10 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Due to the advancement and complexity of modern automobiles, fault detection has moved beyond manual or trial-and-error methods. Fault detection technologies in the automotive industry are used to identify any potential or existing faults in vehicles. These faults are usually mechanical or electrical and may include issues with the airbag control unit, radiator, gearbox, transmission control unit, tire pressure, brakes, air conditioner, cylinder gasket, alternator, hubs, etc. Each fault has specific signs and symptoms. There are several methods for fault detection in automobiles, such as the binary logic technique, fuzzy logic method, and artificial intelligence technique using different algorithms. In this research, we employed a fuzzy logic-based technique utilizing the Mamdani Algorithm, which presented a superior fault detection mechanism. Ebrahim Mamdani proposed Mamdani\'92s algorithm as a fuzzy inference method with rule-bases that are more intuitive and easier to analyze and implement. Mamdani\'92s algorithm produces fuzzy sets derived from the fuzzy inference system's output membership function for decision-making. This research involves a web-based technology implemented using JavaScript, JQuery, SQL Server, ASP.Net, Bootstrap 3.5, and CSS. The system's output showed significant improvement over other existing methods of fault detection in automobiles.}
